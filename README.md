@@ -78,8 +78,6 @@ The main objectives of this project are:
 * Linux
 * Apache HTTP Server
 * Apache VirtualHost
-* `mod_proxy`
-* `mod_proxy_http`
 * ProxyPass
 * ProxyPassReverse
 * HTML
@@ -95,7 +93,7 @@ The main objectives of this project are:
 **Role:** Apache Reverse Proxy
 
 ```text
-Hostname: Proxy-Server
+Hostname: httpd-Server
 Website: techsupport.com
 Document Root: /opt/TechSupport
 ```
@@ -140,22 +138,21 @@ apache-reverse-proxy-proxypass-lab/
 ├── README.md
 │
 ├──  httpd-server-reverse-proxy/
-│   ├── apache/
-│   │   └── httpd-vhosts.conf
-│   │
+│   └── httpd-vhosts.conf
+│   │ 
 │   └── TechSupport/
 │       ├── index.html
 │       ├── style.css
 │       └── javascript.js
 │
 ├── server-1/
-│   ├── apache/
-│   │   └── httpd-vhosts.conf
-│   │
+│   ├── httpd-vhosts.conf
 │   └── TravelExplorer/
 │       ├── index.html
 │       ├── style.css
-│       └── javascript.js
+│       └── javascript.js  
+│
+│   
 │
 ├── screenshots/
 │   ├── 01_install_httpd_proxy_server.png
